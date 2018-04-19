@@ -1,0 +1,10 @@
+<h1>Weather</h1>
+
+<div>
+  <label>
+    City: <input [(ngModel)]="city" placeholder="city" />
+  </label>
+  <button (click)="getWeather()">get weather</button>
+</div>
+
+<div>{{weatherData.main.temp}}</div>
